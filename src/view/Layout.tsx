@@ -1,17 +1,18 @@
+import { Box } from "@mui/material";
 import React, { PropsWithChildren } from "react"
 
 
 type MyComponentProps = PropsWithChildren<{}>;
 
 const Layout = ({ children }: MyComponentProps) => {
-    return (<div
-        style={{
-            display: "flex",
-            width: "100%"
+    return (<Box
+        sx={{
+            backgroundColor: "orange",
+            // height: "100vh"
         }}
     >
         {children}
-    </div>)
+    </Box>)
 }
 
 export default Layout

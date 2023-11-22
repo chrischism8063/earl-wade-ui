@@ -3,13 +3,13 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Layout from './view/Layout'
 import Home from './view/Home'
 import NoPage from './view/NoPage'
+import { Container } from '@mui/material'
 
 function App() {
   return (
-    <>
+    <Container maxWidth={false} disableGutters={true}>
       <Header />
       <BrowserRouter>
         <Routes>
@@ -19,7 +19,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </>
+    </Container>
   )
 }
 
